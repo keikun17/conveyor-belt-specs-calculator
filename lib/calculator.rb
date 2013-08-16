@@ -1,3 +1,3 @@
 class Calculator
-  attr_accessor :application
+  attr_accessor :application, :pulley_diameter
 end
