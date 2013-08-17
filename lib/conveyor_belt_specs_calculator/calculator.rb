@@ -6,7 +6,7 @@ class Calculator
   end
 
   def calculate
-    calculation ={
+    calculation = {
       tensile: calculate_tensile_rating,
       ply: calculate_ply_count
     }

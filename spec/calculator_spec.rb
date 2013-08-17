@@ -15,10 +15,9 @@ describe Calculator do
 
   it "calculates for the ply" do
     subject.should_receive(:calculate_ply_count)
-    subject.should_calculate_tensile_rating
-    subject.calculate_ply_count
+    subject.should_receive(:calculate_tensile_rating)
 
-    subject.calculate.should_be_an_instance_of Hash
+    subject.calculate.should be_an_instance_of(Hash)
   end
 
   context "#calculate_ply_count" do
