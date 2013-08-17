@@ -1,7 +1,4 @@
-# A sample Gemfile
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-# gem "rails"
-#
-gem 'rspec'
-gem 'pry'
+# Specify your gem's dependencies in conveyor_belt_specs_calculator.gemspec
+gemspec
