@@ -1,9 +1,8 @@
-require '../../lib/calculator'
-require '../../lib/usage'
+require 'conveyor_belt_specs_calculator/calculator'
 
 describe Calculator do
 
-  let(usage) do
+  let(:usage) do
     usage_attrs = {}
     usage_attrs[:usage] = ""
     usage_attrs[:pulley_diameter] = ""
