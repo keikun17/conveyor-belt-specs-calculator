@@ -8,7 +8,8 @@ class Calculator
   def calculate
     calculation = {
       tensile: calculate_tensile_rating,
-      ply: calculate_ply_count
+      ply: calculate_ply_count,
+      minimum_pulley_diameter: calculate_minimum_pulley_diameter
     }
     calculation
   end
@@ -26,6 +27,9 @@ class Calculator
   #   EP 200 - 3P
   #     16in or 406.4mm
   #     22in or 558.8mm
+  def calculate_minimum_pulley_diameter
+  end
+
   def calculate_ply_count
   end
 

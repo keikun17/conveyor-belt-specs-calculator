@@ -16,6 +16,7 @@ describe Calculator do
   it "calculates for the ply" do
     subject.should_receive(:calculate_ply_count)
     subject.should_receive(:calculate_tensile_rating)
+    subject.should_receive(:calculate_minimum_pulley_diameter)
 
     subject.calculate.should be_an_instance_of(Hash)
   end
@@ -26,6 +27,11 @@ describe Calculator do
   end
 
   context "#calculate_tensile_rating" do
+    let (:usage) { usage = mock_model(Usage, pulley_diameter: "12") }
+    it { pending }
+  end
+
+  context "#calculate_minimum_pulley_diameter" do
     let (:usage) { usage = mock_model(Usage, pulley_diameter: "12") }
     it { pending }
   end
