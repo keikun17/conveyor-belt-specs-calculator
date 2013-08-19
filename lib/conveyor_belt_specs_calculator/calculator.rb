@@ -16,7 +16,7 @@ class Calculator
   def calculate_tensile_rating
   end
 
-  # Recommended ply count :
+  # Recommended pulley diameter:
   #   FOR EP100
   #     12in or 304.8mm
   #     16in or 406.4mm
