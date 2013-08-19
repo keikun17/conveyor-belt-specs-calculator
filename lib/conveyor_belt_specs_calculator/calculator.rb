@@ -1,7 +1,7 @@
 class Calculator
   attr_accessor :usage
 
-  def intialize(usage)
+  def initialize(usage)
     @usage = usage
   end
 
@@ -28,6 +28,13 @@ class Calculator
   #     16in or 406.4mm
   #     22in or 558.8mm
   def calculate_minimum_pulley_diameter
+    val = if calculate_tensile_rating == 100
+      "val"
+    elsif calculate_tensile_rating == nil
+      "Cannot compute"
+    end
+
+    return val
   end
 
   def calculate_ply_count

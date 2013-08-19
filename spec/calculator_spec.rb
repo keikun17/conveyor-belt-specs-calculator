@@ -1,17 +1,14 @@
 require 'conveyor_belt_specs_calculator/calculator'
+require 'conveyor_belt_specs_calculator/usage'
 
 describe Calculator do
 
   let(:usage) do
     usage_attrs = {}
-    usage_attrs[:usage] = ""
-    usage_attrs[:pulley_diameter] = ""
-    usage_attrs[:ambient_temp] = ""
-    usage_attrs[:material_temp] = ""
     Usage.new(usage_attrs)
   end
 
-  subject { described_class.new }
+  subject { puts described_class.class; described_class.new(usage) }
 
   it "calculates for the ply" do
     subject.should_receive(:calculate_ply_count)
@@ -21,19 +18,26 @@ describe Calculator do
     subject.calculate.should be_an_instance_of(Hash)
   end
 
-  context "#calculate_ply_count" do
-    let (:usage) { usage = mock_model(Usage, pulley_diameter: "12") }
+  describe "#calculate_ply_count" do
     it { pending }
   end
 
-  context "#calculate_tensile_rating" do
-    let (:usage) { usage = mock_model(Usage, pulley_diameter: "12") }
+  describe "#calculate_tensile_rating" do
     it { pending }
   end
 
-  context "#calculate_minimum_pulley_diameter" do
-    let (:usage) { usage = mock_model(Usage, pulley_diameter: "12") }
-    it { pending }
+  describe "#calculate_minimum_pulley_diameter" do
+
+    context "tensile rating is not available" do
+      before{ described_class.any_instance.stub(:calculate_tensile_rating).and_return(nil) }
+
+      it "should not compute" do
+        expect(subject.calculate_minimum_pulley_diameter).to eq("Cannot compute") 
+      end
+    end
+
+    context "tensile rating is availabe" do
+    end
   end
 
 end

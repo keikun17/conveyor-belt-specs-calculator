@@ -3,4 +3,8 @@ class Usage
     :ambient_temp,
     :material_temp,
     :length
+
+  def initialize(h)
+    h.each {|k,v| send("#{k}=",v)}
+  end
 end
