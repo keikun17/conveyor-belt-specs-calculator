@@ -19,3 +19,15 @@ jis:
     tensile_strenght: 8
     break_elongation_percent: 300
     abrasion_resistance_mm3: 400
+
+# Germany Standard (DIN-22102)
+din:
+  w:
+    tensile_strenght: 18
+    break_elongation_percent: 400
+    abrasion_resistance_mm3: 90
+
+  x:
+    tensile_strenght: 25
+    break_elongation_percent: 450
+    abrasion_resistance_mm3: 120
