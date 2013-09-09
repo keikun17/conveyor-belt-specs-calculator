@@ -31,3 +31,14 @@ din:
     tensile_strenght: 25
     break_elongation_percent: 450
     abrasion_resistance_mm3: 120
+
+  y:
+    tensile_strenght: 20
+    break_elongation_percent: 400
+    abrasion_resistance_mm3: 150
+
+  # DIN-Z(K)
+  z:
+    tensile_strenght: 15
+    break_elongation_percent: 350
+    abrasion_resistance_mm3: 250
