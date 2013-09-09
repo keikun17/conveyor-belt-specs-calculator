@@ -1,44 +1,44 @@
 # Japan Standard (JIS-K6322)
 jis:
   a:
-    tensile_strenght: 14
+    tensile_strength: 14
     break_elongation_percent: 400
     abrasion_resistance_mm3: 150
 
   s:
-    tensile_strenght: 18
+    tensile_strength: 18
     break_elongation_percent: 450
     abrasion_resistance_mm3: 200
 
   g:
-    tensile_strenght: 14
+    tensile_strength: 14
     break_elongation_percent: 400
     abrasion_resistance_mm3: 250
 
   p:
-    tensile_strenght: 8
+    tensile_strength: 8
     break_elongation_percent: 300
     abrasion_resistance_mm3: 400
 
 # Germany Standard (DIN-22102)
 din:
   w:
-    tensile_strenght: 18
+    tensile_strength: 18
     break_elongation_percent: 400
     abrasion_resistance_mm3: 90
 
   x:
-    tensile_strenght: 25
+    tensile_strength: 25
     break_elongation_percent: 450
     abrasion_resistance_mm3: 120
 
   y:
-    tensile_strenght: 20
+    tensile_strength: 20
     break_elongation_percent: 400
     abrasion_resistance_mm3: 150
 
   # DIN-Z(K)
   z:
-    tensile_strenght: 15
+    tensile_strength: 15
     break_elongation_percent: 350
     abrasion_resistance_mm3: 250
