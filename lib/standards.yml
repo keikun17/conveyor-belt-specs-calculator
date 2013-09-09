@@ -8,3 +8,13 @@ jis:
     tensile_strenght: 18
     break_elongation_percent: 450
     abrasion_resistance_mm3: 200
+
+  g:
+    tensile_strenght: 14
+    break_elongation_percent: 400
+    abrasion_resistance_mm3: 250
+
+  p:
+    tensile_strenght: 8
+    break_elongation_percent: 300
+    abrasion_resistance_mm3: 400
