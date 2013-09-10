@@ -42,3 +42,18 @@ din:
     tensile_strength: 15
     break_elongation_percent: 350
     abrasion_resistance_mm3: 250
+
+# AS-1332, 1334
+as:
+  a:b
+    tensile_strength: 17
+    break_elongation_percent: 400
+    abrasion_resistance_mm3: 70
+  m:
+    tensile_strength: 24
+    break_elongation_percent: 450
+    abrasion_resistance_mm3: 125
+  n:
+    tensile_strength: 17
+    break_elongation_percent: 400
+    abrasion_resistance_mm3: 200
